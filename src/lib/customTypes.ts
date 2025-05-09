@@ -1,9 +1,7 @@
 export type Repository = {
   full_name: string;
   name: string;
-  owner: {
-    login: string;
-  };
+  ownerLogin: string;
   description: string;
   url: string;
   languages: {

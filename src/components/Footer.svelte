@@ -1,4 +1,6 @@
 <script lang="ts">
+  import Icon from "@iconify/svelte";
+
   const friends: { src: string; href: string; alt: string; tooltip: string }[] =
     [
       {
@@ -9,7 +11,7 @@
       },
       {
         src: "https://avatars.githubusercontent.com/u/46420489?v=4",
-        href: "",
+        href: "https://jsw.tf/",
         alt: "JSW's profile",
         tooltip: "JSW",
       },
@@ -48,7 +50,7 @@
       href="https://signal.me/#@whacky.08"
       aria-label="Signal"
     >
-      <span class="iconify icon-[lineicons--signal-app]"></span>
+      <Icon icon="lineicons:signal-app" />
     </a>
     <a
       class="tooltip"
@@ -56,7 +58,7 @@
       href="mailto:damian.whacky@proton.me"
       aria-label="E-mail"
     >
-      <span class="iconify icon-[mdi--email]"></span>
+      <Icon icon="mdi:email" />
     </a>
     <a
       class="tooltip"
@@ -64,7 +66,7 @@
       href="https://github.com/wh4ky/"
       aria-label="GitHub"
     >
-      <span class="iconify icon-[mdi--github]"></span>
+      <Icon icon="mdi:github" />
     </a>
     <a
       class="tooltip"
@@ -72,7 +74,7 @@
       href="https://discord.com/users/663014201345835053"
       aria-label="Discord"
     >
-      <span class="iconify icon-[mdi--discord]"></span>
+      <Icon icon="mdi:discord" />
     </a>
     <a
       class="tooltip"
@@ -80,7 +82,7 @@
       href="https://www.last.fm/user/whackydev"
       aria-label="Last.fm"
     >
-      <span class="iconify icon-[mdi--lastfm]"></span>
+      <Icon icon="mdi:lastfm" />
     </a>
   </nav>
 </footer>

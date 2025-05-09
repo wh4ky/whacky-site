@@ -8,7 +8,7 @@
   let error: string | null = null;
 
   const GITHUB_STORAGE_KEY: string = "GitHubData";
-  const FETCH_INTERVAL: number = 1800000; // 30 minutes
+  const FETCH_INTERVAL: number = 1200000; // 20 minutes
   const GITHUB_BASE_URL: string = "https://api.github.com";
 
   onMount(async () => {
@@ -72,7 +72,7 @@
       returnData.push({
         full_name: project.full_name,
         name: project.name,
-        owner: project.owner,
+        ownerLogin: project.owner.login,
         description: project.description,
         url: project.html_url,
         languages: languageData,
@@ -105,7 +105,7 @@
           >
             <a href={project.url} class="block">
               <h3 class="card-title text-lg font-semibold text-white">
-                {project.owner.login}/<span class="text-primary text-2xl"
+                {project.ownerLogin}/<span class="text-primary text-2xl"
                   >{project.name}</span
                 >
               </h3>

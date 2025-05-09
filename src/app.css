@@ -3,8 +3,3 @@
 @plugin "daisyui" {
   themes: dark --default, light --preferslight;
 }
-
-@plugin "@iconify/tailwind4";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
